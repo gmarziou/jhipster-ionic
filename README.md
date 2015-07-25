@@ -1,6 +1,6 @@
 # JHipster-Ionic (Work in Progress)
 
-Example showing how to build an [Ionic] app using  [JHipster] as backend
+Example showing how to build an [Ionic](http://ionicframework.com/) app using [JHipster](http://jhipster.github.io/) as backend
 
 The project is structured in 2 modules:
 - server: the JHipster backend
@@ -23,8 +23,8 @@ The project is structured in 2 modules:
 
 I chose the default options except for:
 
-- gradle to be consistent with Android and [Apache Cordova]
-- gulp to be consistent with [M-generator] and Ionic
+- gradle to be consistent with Android and [Apache Cordova](https://cordova.apache.org/)
+- gulp to be consistent with [M-generator](https://github.com/mwaylabs/generator-m) and Ionic
 - no translation
 
 Test that app works:
@@ -54,10 +54,3 @@ Test that app works in browser:
 
 Open http://127.0.0.1:9000
 
-# Links
-
-- [Ionic](http://ionicframework.com/)
-- [JHipster](http://jhipster.github.io/)
-- [M-generator](https://github.com/mwaylabs/generator-m)
-- [Apache Cordova](https://cordova.apache.org/)
-- [Apche Cordova](https://cordova.apache.org/)
