@@ -1,5 +1,5 @@
 'use strict';
-angular.module('jhipster', [
+angular.module('jhipsterApp', [
   // load your modules here
   'main' // starting with the main module
 ]);

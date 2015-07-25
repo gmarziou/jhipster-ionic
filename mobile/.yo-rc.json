@@ -1,7 +1,7 @@
 {
   "generator-m": {
     "answers": {
-      "appName": "jhipster",
+      "appName": "jhipsterApp",
       "appId": "com.mycompany.myapp",
       "bowerPackages": [
         "angular-localForage#~1.2.2"
@@ -12,7 +12,7 @@
       "plugins": [
         "cordova-plugin-device"
       ],
-      "appModule": "jhipster"
+      "appModule": "jhipsterApp"
     }
   }
 }
