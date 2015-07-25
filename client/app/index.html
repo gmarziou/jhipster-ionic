@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title>jhipster</title>
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+    <!-- build:css styles/vendor.css -->
+    <!-- bower:css -->
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:css main/styles/app.css -->
+    <!-- inject:css -->
+    <link rel="stylesheet" href="main/styles/module.css">
+    <!-- endinject -->
+    <!-- endbuild -->
+  </head>
+  <body ng-app="jhipster">
+
+    <!-- the nav bar will be updated as we navigate between views -->
+    <!-- <ion-nav-bar> can be removed when using sidemenu (contained in menu.html) -->
+    <ion-nav-bar class="bar-assertive">
+      <ion-nav-back-button></ion-nav-back-button>
+    </ion-nav-bar>
+    <!-- the current view will be rendered in the <ion-nav-view> directive -->
+    <ion-nav-view></ion-nav-view>
+
+    <!-- will be a 404 during development -->
+    <script src="cordova.js"></script>
+
+    <!-- build:js scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.js"></script>
+    <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+    <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+    <script src="bower_components/ionic/release/js/ionic.js"></script>
+    <script src="bower_components/ionic/release/js/ionic-angular.js"></script>
+    <script src="bower_components/ngCordova/dist/ng-cordova.js"></script>
+    <script src="bower_components/localforage/dist/localforage.js"></script>
+    <script src="bower_components/angular-localForage/dist/angular-localForage.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:js scripts/app.js -->
+    <!-- inject:js -->
+    <script src="main/main.js"></script>
+    <script src="main/services/main-serv.js"></script>
+    <script src="main/controllers/menu-ctrl.js"></script>
+    <script src="main/controllers/debug-ctrl.js"></script>
+    <script src="main/constants/config-const.js"></script>
+    <script src="app.js"></script>
+    <!-- endinject -->
+    <!-- endbuild -->
+  </body>
+</html>
