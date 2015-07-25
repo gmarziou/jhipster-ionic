@@ -58,15 +58,15 @@ Open http://127.0.0.1:9000
 
 ### Project structure
 
-JHipster: organized by feature, a folder can contain a state, a controller and a template.
-Generator-M: organized by module and type, all stats are defined in one file per module (e.g. main.js)
+- JHipster: organized by feature, a folder can contain a state, a controller and a template.
+- Generator-M: organized by module and type, all stats are defined in one file per module (e.g. main.js)
 
 ### Modules
 
-JHipster: single module
-Generator-M: Multi modules but at least app and main
+- JHipster: single module
+- Generator-M: Multi modules but at least app and main
 
 ### Naming conventions
 
-JHipster: MainController defined in main.controller.js
-Generator-M: MainCtrl defined in main-ctrl.js
+- JHipster: MainController defined in main.controller.js
+- Generator-M: MainCtrl defined in main-ctrl.js
