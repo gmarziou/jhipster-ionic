@@ -79,4 +79,4 @@ Open http://127.0.0.1:9000
 
 ## Generator-M pull requests
 
-- mwaylabs/generator-m#220
+- [Add templates path to gulpfile.js config](https://github.com/mwaylabs/generator-m/pull/220)
