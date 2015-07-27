@@ -76,3 +76,7 @@ Open http://127.0.0.1:9000
 
 - JHipster: MainController defined in main.controller.js
 - Generator-M: MainCtrl defined in main-ctrl.js
+
+## Generator-M pull requests
+
+- mwaylabs/generator-m#220
