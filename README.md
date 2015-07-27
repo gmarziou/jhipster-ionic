@@ -1,15 +1,16 @@
 # JHipster-Ionic (Work in Progress)
 
-This is attempt to show how to build an [Ionic](http://ionicframework.com/) app using [JHipster](http://jhipster.github.io/) as backend
+This is an attempt to show how to build an [Ionic](http://ionicframework.com/) app using [JHipster](http://jhipster.github.io/) as backend
 
 The project is structured in 2 modules:
 - server: the JHipster backend
 - mobile: the Ionic app
 
-The guiding principle would be to generate the mobile app using Yeoman [Generator-M](https://github.com/mwaylabs/generator-m)
-while following JHipster angular code conventions so that users feel at home.
+The guiding principle is be to generate the mobile app using Yeoman [Generator-M](https://github.com/mwaylabs/generator-m)
+to benefit of its great tooling while following JHipster angular code conventions so that
+JHipster users feel at home.
 
-If the prototype is successful, JHipster could be extended to generate CRUD screens for each entity in mobile app.
+If the prototype is successful, JHipster could be extended with a sub generator that would generate CRUD screens for each entity in mobile app.
 
 ## Environment
 
