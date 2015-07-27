@@ -7,7 +7,7 @@ The project is structured in 2 modules:
 - mobile: the Ionic app
 
 The guiding principle is be to generate the mobile app using Yeoman [Generator-M](https://github.com/mwaylabs/generator-m)
-to benefit of its great tooling while following JHipster angular code conventions so that
+to benefit from its great tooling while following JHipster angular code conventions so that
 JHipster users feel at home.
 
 If the prototype is successful, JHipster could be extended with a sub generator that would generate CRUD screens for each entity in mobile app or it could be just documented in our [Tips'n tricks section](http://jhipster.github.io/tips.html)
