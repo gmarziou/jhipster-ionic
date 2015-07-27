@@ -58,8 +58,8 @@ Open http://127.0.0.1:9000
 
 ### Project structure
 
-- JHipster: organized by feature, a folder can contain a state, a controller and a template.
-- Generator-M: organized by module and type, all stats are defined in one file per module (e.g. main.js)
+- JHipster: organized by feature, a folder can contain a state, a controller and a template. Generic components (filters, directives, services) are stored in 'components' folder.
+- Generator-M: organized by module and type, all states are defined in one file per module (e.g. main.js)
 
 ### Modules
 
