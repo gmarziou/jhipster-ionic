@@ -79,4 +79,18 @@ Open http://127.0.0.1:9000
 
 ## Generator-M pull requests
 
-- [Add templates path to gulpfile.js config](https://github.com/mwaylabs/generator-m/pull/220)
+I proposed some PR to Generator-M to make it easier for JHipster.
+
+- 220: [Add templates path to gulpfile.js config](https://github.com/mwaylabs/generator-m/pull/220)
+
+## API versioning
+
+Currently in JHipster, the server and angular codes are coupled so there's no problem of compatibility.
+
+When building a mobile app, this problem can occur because you don't manage when users will update the mobile app.
+
+So, it could mean:
+
+- server and mobile app must have a version number
+- server API URL may include verison  (e.g. /api/v1)
+- mobile client should send its version number upon each request using an HTTP header. This can be implemented by using [$http interceptors](https://docs.angularjs.org/api/ng/service/$http#interceptors) and pre-defining some standard responses like "client too old" that the mobile app can use to notify the user that she must update the app.
