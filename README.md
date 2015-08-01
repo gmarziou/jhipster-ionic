@@ -83,6 +83,16 @@ I proposed some PR to Generator-M to make it easier for JHipster.
 
 - 220: [Add templates path to gulpfile.js config](https://github.com/mwaylabs/generator-m/pull/220)
 
+# API
+
+## Generating
+
+JHipster uses Swagger to document its API, it's available at http://localhost/v2/api-docs but it requires authentication.
+
+JHiposter's [swagger specification file](https://github.com/wordnik/swagger-spec) could be generated statically by build process and processed to generate some client code like [swagger-js-codegen](https://github.com/wcandillon/swagger-js-codegen). JHipster's API controllers should probably be better annotated.
+
+An alternative is to use dynamic clients: [swagger-js](https://github.com/swagger-api/swagger-js) or [swagger-client](https://github.com/signalfx/swagger-client)
+
 ## API versioning
 
 Currently in JHipster, the server and angular codes are coupled so there's no problem of compatibility.
@@ -94,3 +104,7 @@ So, it could mean:
 - server and mobile app must have a version number
 - server API URL may include verison  (e.g. /api/v1)
 - mobile client should send its version number upon each request using an HTTP header. This can be implemented by using [$http interceptors](https://docs.angularjs.org/api/ng/service/$http#interceptors) and pre-defining some standard responses like "client too old" that the mobile app can use to notify the user that she must update the app.
+
+## CORS
+
+- Servlet filter 
