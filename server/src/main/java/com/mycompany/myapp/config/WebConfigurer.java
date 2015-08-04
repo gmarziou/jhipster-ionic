@@ -3,6 +3,7 @@ package com.mycompany.myapp.config;
 import com.codahale.metrics.MetricRegistry;
 import com.codahale.metrics.servlet.InstrumentedFilter;
 import com.codahale.metrics.servlets.MetricsServlet;
+import com.mycompany.myapp.web.filter.ApiOriginFilter;
 import com.mycompany.myapp.web.filter.CachingHttpHeadersFilter;
 import com.mycompany.myapp.web.filter.StaticResourcesProductionFilter;
 import com.mycompany.myapp.web.filter.gzip.GZipServletFilter;
@@ -43,6 +44,10 @@ public class WebConfigurer implements ServletContextInitializer, EmbeddedServlet
     public void onStartup(ServletContext servletContext) throws ServletException {
         log.info("Web application configuration, using profiles: {}", Arrays.toString(env.getActiveProfiles()));
         EnumSet<DispatcherType> disps = EnumSet.of(DispatcherType.REQUEST, DispatcherType.FORWARD, DispatcherType.ASYNC);
+
+        // Add CORS headers to API responses for use by mobile client
+        initApiOriginFilter(servletContext, disps);
+
         if (!env.acceptsProfiles(Constants.SPRING_PROFILE_FAST)) {
             initMetrics(servletContext, disps);
         }
@@ -55,6 +60,19 @@ public class WebConfigurer implements ServletContextInitializer, EmbeddedServlet
             initH2Console(servletContext);
         }
         log.info("Web application fully configured");
+    }
+
+    /**
+     * Initializes the  API Origin Filter.
+     */
+    private void initApiOriginFilter(ServletContext servletContext,
+                                     EnumSet<DispatcherType> disps) {
+        log.debug("Registering API Origin Filter");
+        FilterRegistration.Dynamic apiOriginFilter =
+            servletContext.addFilter("apiOriginFilter", new ApiOriginFilter());
+
+        apiOriginFilter.addMappingForUrlPatterns(disps, true, "/api/*");
+        apiOriginFilter.setAsyncSupported(true);
     }
 
     /**

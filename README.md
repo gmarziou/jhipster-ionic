@@ -105,7 +105,13 @@ So, it could mean:
 - server API URL may include verison  (e.g. /api/v1)
 - mobile client should send its version number upon each request using an HTTP header. This can be implemented by using [$http interceptors](https://docs.angularjs.org/api/ng/service/$http#interceptors) and pre-defining some standard responses like "client too old" that the mobile app can use to notify the user that she must update the app.
 
-## CORS
+## Cross-origin resource sharing (CORS)
 
-- Servlet filter 
-- [Spring 4.2 @CrossOrigin](https://spring.io/blog/2015/06/08/cors-support-in-spring-framework)
+JHipster backend must set response headers indicating that it allows CORS, it can be done in 2 ways:
+
+- by mapping a servlet filter on '/api'
+- by using new annotation [@CrossOrigin introduced in Spring 4.2](https://spring.io/blog/2015/06/08/cors-support-in-spring-framework)
+
+Spring 4.2 did not fully work with JHipster 2.19.0, so we will have to wait for JHipster to support Spring Boot 1.3
+when it's released.
+In the meantime I copied [ApiOriginFilter](server/src/main/java/com/mycompany/myapp/web/filter/ApiOriginFilter.java) from swagger-codegen project and configured it in [WebConfigurer](server/src/main/java/com/mycompany/myapp/config/WebConfigurer.java).
