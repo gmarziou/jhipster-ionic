@@ -108,3 +108,4 @@ So, it could mean:
 ## CORS
 
 - Servlet filter 
+- [Spring 4.2 @CrossOrigin](https://spring.io/blog/2015/06/08/cors-support-in-spring-framework)
