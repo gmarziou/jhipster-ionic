@@ -102,7 +102,7 @@ When building a mobile app, this problem can occur because you don't manage when
 So, it could mean:
 
 - server and mobile app must have a version number
-- server API URL may include verison  (e.g. /api/v1)
+- server API URL may include version  (e.g. /api/v1) or use media-type `application/vnd.jhipster.v1+json`
 - mobile client should send its version number upon each request using an HTTP header. This can be implemented by using [$http interceptors](https://docs.angularjs.org/api/ng/service/$http#interceptors) and pre-defining some standard responses like "client too old" that the mobile app can use to notify the user that she must update the app.
 
 ## Cross-origin resource sharing (CORS)
