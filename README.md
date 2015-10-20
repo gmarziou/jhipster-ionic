@@ -6,7 +6,7 @@ The project is structured in 2 modules:
 - server: the JHipster backend
 - mobile: the Ionic app
 
-The guiding principle is be to generate the mobile app using Yeoman [Generator-M](https://github.com/mwaylabs/generator-m)
+The guiding principle is be to generate the mobile app using Yeoman [Generator-M-Ionic](https://github.com/mwaylabs/generator-m-ionic)
 to benefit from its great tooling while following JHipster angular code conventions so that
 JHipster users feel at home.
 
@@ -70,12 +70,12 @@ Open http://127.0.0.1:9000
 ### Modules
 
 - JHipster: single module
-- Generator-M: Multi modules but at least app and main
+- Generator-M-Ionic: Multi modules but at least app and main
 
 ### Naming conventions
 
 - JHipster: MainController defined in main.controller.js
-- Generator-M: MainCtrl defined in main-ctrl.js
+- Generator-M-Ionic: MainCtrl defined in main-ctrl.js
 
 ## Generator-M pull requests
 
