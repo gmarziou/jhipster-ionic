@@ -1,3 +1,8 @@
+I lost interest in documenting this and also Jon Ruddell has created a module for this: 
+https://jhipster.github.io/modules/marketplace/#/details/generator-jhipster-ionic
+
+Also, I'm moving to NativeScript rather than to Ionic 2.
+
 # JHipster-Ionic (Work in Progress)
 
 This is an attempt to show how to build an [Ionic](http://ionicframework.com/) app using [JHipster](http://jhipster.github.io/) as backend
